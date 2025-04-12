@@ -1,0 +1,333 @@
+.body{
+    font-face {
+        font-family: 'Nucleo';
+        src: url('../fonts/Nucleo.eot');
+        src: url('../fonts/Nucleo.eot') format('embedded-opentype'), url('../fonts/Nucleo.woff2') format('woff2'), url('../fonts/Nucleo.woff') format('woff'), url('../fonts/Nucleo.ttf') format('truetype'), url('../fonts/Nucleo.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+}
+
+
+header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            gap: 400px;
+            img{
+                width: 200px;
+    margin-top: 10px;
+}
+}
+
+
+nav{
+    text-decoration: none;
+    gap: 20px;
+    img{
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        z-index: 100000000px;
+        max-width: 100px;
+    }
+    a{
+        text-decoration: none;
+    color:black;
+        font-weight: bold;
+}
+}
+
+.collage:hover{
+    color: #3aacc2 ;
+}
+
+button{ 
+background-color: blue;
+color: white;
+border-radius: 10px;
+border-radius: 10px;
+padding: 15px;
+}
+.text-hero{
+    width: 60%;
+    font-size: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 500px;
+    margin: 50px;
+}
+.text{
+    width: 60%;
+    font-size: 30px;
+}
+    h{
+        font-size: 20px;
+        margin-bottom:1px;
+    }
+    p{
+        font-size: 16px;
+        width: 70%;
+        line-height: 1.7;
+    }
+    .link-block{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    .palette{
+        border: 6px solid #333;
+        border-radius: 10px;
+        position: absolute;
+        left: 600px;
+        bottom: -30%;
+        width: 300px;
+        height: 300px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+img{
+    width: 200px;
+    margin-top: 10px;
+    transition: all 0.3s cubic-bezier(0.6, 0.04, 0);
+    image-resolution: 100px;
+}
+.bg-color{
+    background-color: white;
+    color: black;
+}
+.text-img img{
+    width: 400px;
+    height: 700px;
+    border-radius: 30px;
+    border-color: black;
+    box-sizing: border-box;
+    outline: none;
+    border: 6px solid #333;
+}
+
+.icon{
+    display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  div{
+    position: relative;
+  width: 200px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05); 
+}
+  a{
+    text-decoration: none;
+    margin: 10px 0 10px;
+  font-size: 18px;
+color:#333; 
+}
+img{
+    width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+}
+span{
+    color: #555;
+  font-size: 14px;
+  line-height: 1.4rem;
+}
+.new-badge {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: #ff2d55;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 5px;
+  }
+
+.first:hover{
+background-color: lightblue ;
+}
+ .icon:before .first:before{
+    content: "";
+    position: absolute;
+    transition: width .5s ease;
+}
+
+.icon:hover .first::before {
+    content: "View on the App store";
+    font-size: 50px;
+    color: #3aacc2;
+}
+.icon:hover span{
+    display: none;
+}
+.icon:hover img{
+    display: none;
+}
+.icon:hover a{
+    display: none;
+}
+
+.second:hover{
+    background-color: lightblue;
+}
+.icon:before .second:before{
+    content: "";
+    position: absolute;
+    transition: width .5s ease;
+}
+.icon:hover .second::before {
+    content: "View on the Play store";
+    font-size: 50px;
+    color: green;
+}
+.second:hover span{
+    display: none;
+}
+.second:hover img{
+    display: none;
+}
+.second:hover a{
+    display: none;
+}
+
+.thrid:hover{
+background-color: lightpink;
+}
+.icon:before .thrid:before{
+    content: "";
+    position: absolute;
+    transition: width .5s ease;
+}
+
+.icon:hover .thrid::before {
+    content: "Install";
+    font-size: 70px;
+    color: hotpink;
+}
+.thrid:hover span{
+    display: none;
+}
+.thrid:hover img{
+    display: none;
+}
+.thrid:hover a{
+    display: none;
+}
+
+
+.four:hover{
+    background-color: rgb(238, 106, 183);
+    }
+
+    .icon:before .four:before{
+        content: "";
+        position: absolute;
+        transition: width .5s ease;
+    }
+    .icon:hover .four::before {
+        content: "Add to Chrome";
+        font-size: 50px;
+        color: blueviolet;
+    }
+    .four:hover span{
+        display: none;
+    }
+    .four:hover img{
+        display: none;
+    }
+    .four:hover a{
+        display: none;
+    }
+
+    .five:hover{
+        background-color: rgb(255, 179, 149);
+        }
+        .icon:before .five:before{
+            content: "";
+            position: absolute;
+            transition: width .5s ease;
+        }
+
+        .icon:hover .five::before {
+            content: "Download";
+            font-size: 50px;
+            color: lightsalmon;
+        }
+        .five:hover span{
+            display: none;
+        }
+        .five:hover img{
+            display: none;
+        }
+        .five:hover a{
+            display: none;
+        }
+
+
+  .middle{
+    text-align: center;
+    font-weight: normal;
+    margin-top: 50px;
+img{
+    flex-wrap: wrap;
+    width:100px;
+    :hover{
+        transition: all 350s;
+        color: #555;
+    }
+} 
+
+  }
+
+footer{
+   display: flex;
+   flex-wrap: wrap;
+    margin-top: 50px;
+    position: relative;
+  width: 100vw;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+ 
+ul{
+    list-style: none;
+    width: 350px;
+transition: all 350s;
+    flex-wrap: wrap;
+    :hover{
+        color: #3aacc2;
+    }
+}
+}
+.list-col.new-badge-text {
+    position: absolute;
+    top: 10%;
+    background-color: hotpink;
+    color: orange;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 5px;
+    
+}
+.end{
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.end a:hover{
+    color: #3aacc2;
+}
+.chat{
+    img{
+        max-width: 20px;
+    }
+}
